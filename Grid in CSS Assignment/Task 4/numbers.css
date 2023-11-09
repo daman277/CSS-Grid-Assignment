@@ -1,0 +1,36 @@
+body {
+    margin: 30px;
+}
+
+.container>* {
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 30px;
+    order: 1;
+}
+
+.container>*:nth-child(even) {
+    background-color: lightgray;
+    color: black;
+}
+
+.container {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    gap: 10px;
+}
+
+.box1 {
+    order: 3;
+}
+
+.box2 {
+    order: 6;
+}
+
+.box8 {
+    order: 2;
+}
